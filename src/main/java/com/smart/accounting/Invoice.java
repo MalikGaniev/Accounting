@@ -14,7 +14,6 @@ import java.util.List;
 public class Invoice extends BaseEntity {
 
     private Integer invoice_number;
-    @Column(name = "DATE")
     private LocalDate invoice_date;
     private String invoice_type;
 
