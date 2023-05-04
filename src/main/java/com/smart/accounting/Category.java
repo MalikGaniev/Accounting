@@ -7,9 +7,10 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table (name = "category")
+//@Table (name = "category")
 @NoArgsConstructor
 @Data
+@Table(name = "category")
 public class Category extends BaseEntity{
 
     String categoryName;
