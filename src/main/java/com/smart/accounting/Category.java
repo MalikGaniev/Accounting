@@ -7,13 +7,11 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table (name = "category")
 @NoArgsConstructor
 @Data
-public class Category extends BaseEntity{
+public class Category extends BaseEntity {
 
     String categoryName;
     Double tax;
-
 
 }

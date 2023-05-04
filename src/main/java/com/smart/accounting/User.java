@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
@@ -23,7 +24,7 @@ public class User extends BaseEntity {
     private String lastname;
     private String password;
 
-  /*  @ManyToOne
-    private Role role;*/
+    @ManyToOne(fetch = FetchType.LAZY)
+    private Role role;
 
 }

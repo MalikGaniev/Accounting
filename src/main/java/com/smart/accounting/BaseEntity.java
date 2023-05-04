@@ -8,7 +8,8 @@ import javax.persistence.MappedSuperclass;
 @MappedSuperclass
 public class BaseEntity {
 
-    @GeneratedValue(strategy = GenerationType.IDENTITY )
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private Long id;
+
 }
